@@ -1,16 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500&family=Inter:wght@400;600;700&family=Manrope:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
 
+/* * {
+    border: 1px solid red;
+} */
+
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: "Man-rope", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .main {
-    margin: 10px;
-    font-family: "Man-rope", sans-serif;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    height: 60%;
 }
 
 .side-logo > img {
     height: auto;
     width: 400px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.signup {
+    border: 2px solid red;
+    margin: 0px 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgb(3, 3, 52);
 }
