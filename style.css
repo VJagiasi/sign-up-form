@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500&family=Inter:wght@400;600;700&family=Manrope:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
 
-/* * {
-    border: 1px solid red;
-} */
 
+
+:root {
+    --bold-accent: #0020ad;
+    --light-accent: #a1a1a1;
+}
 
 html, body {
     height: 100%;
@@ -14,7 +16,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -23,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60%;
+    margin: 100px 100px;
 }
 
 .side-logo > img {
@@ -33,14 +36,78 @@ body {
 }
 
 .signup {
-    border: 2px solid red;
-    margin: 0px 30px;
+    border: 6px solid rgb(2, 2, 2);
+    border-radius: 20px;
 }
 
 .title {
     text-align: center;
-    font-size: 60px;
+    font-size: 48px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     color: rgb(3, 3, 52);
 }
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+info > ::placeholder {
+    color: var(--light-accent)
+}
+
+.info > input {
+    padding: 10px 30px;
+    border: 3px solid var(--bold-accent);
+    border-radius: 10px;
+    margin-left: 10px;
+    color: black;
+    font-size: 20px;
+} 
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.create-account > p {
+    color: var(--light-accent);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.agree {
+    width: 70%;
+}
+
+button {
+    padding: 10px 70px;
+    background-color: var(--bold-accent);
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid black;
+}
+
+.login, 
+.terms {
+    color: var(--bold-accent);
+    font-weight: 900;
+}
+
+footer {
+    font-size: 20px;
+}
+
